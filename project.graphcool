@@ -1,0 +1,38 @@
+# project: cj360zlue09430182qzo3xh0u
+# version: 14
+
+type File implements Node {
+  contentType: String!
+  createdAt: DateTime!
+  id: ID! @isUnique
+  name: String!
+  secret: String! @isUnique
+  size: Int!
+  updatedAt: DateTime!
+  url: String! @isUnique
+}
+
+type User implements Node {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+  createdCompanies: [Company!]! @relation(name: "CreatedCompany")
+  email: String @isUnique
+  password: String
+}
+
+type Company implements Node {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+  createdBy: User @relation(name: "CreatedCompany")
+  name: String!
+  phone: String
+}
+
+type Item implements Node {
+  createdAt: DateTime!
+  id: ID! @isUnique
+  updatedAt: DateTime!
+  name: String!
+}

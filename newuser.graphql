@@ -1,0 +1,11 @@
+mutation {
+  createUser(authProvider: {
+    email: {
+      email: "EMAIL@gmail.com",
+      password:"PASSHERE"
+    }
+  }) {
+    email,
+    password
+  }
+}
