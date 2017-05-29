@@ -1,0 +1,39 @@
+{
+  "name": "item-graph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimthedev/item-graph.git"
+  },
+  "keywords": [],
+  "author": "Jim Cummins <jimthedev@gmail.com> (https://github.com/jimthedev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimthedev/item-graph/issues"
+  },
+  "homepage": "https://github.com/jimthedev/item-graph#readme",
+  "dependencies": {
+    "graphql": "^0.10.1",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^3.0.0-beta6",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-apollo": "^1.2.0",
+    "react-dock": "^0.2.4",
+    "react-dom": "^15.5.4",
+    "react-remarkable": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-import-graphql-ast": "^1.2.3",
+    "babel-preset-stage-0": "^6.24.1",
+    "rimraf": "^2.6.1"
+  }
+}
